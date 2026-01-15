@@ -84,17 +84,17 @@ export default function TechStack() {
 
         {/* Stats */}
         <div className="grid md:grid-cols-3 gap-8 mt-12">
-          <div className="text-center p-6 bg-slate-800 rounded-xl border border-slate-700">
-            <div className="text-4xl font-bold text-cyan-400 mb-2">15+</div>
-            <p className="text-slate-400">Tecnologias Dominadas</p>
+          <div className="text-center p-6 card">
+            <div className="text-4xl font-bold text-accent mb-2">15+</div>
+            <p className="text-muted">Tecnologias Dominadas</p>
           </div>
-          <div className="text-center p-6 bg-slate-800 rounded-xl border border-slate-700">
-            <div className="text-4xl font-bold text-cyan-400 mb-2">100%</div>
-            <p className="text-slate-400">Projetos em Produção</p>
+          <div className="text-center p-6 card">
+            <div className="text-4xl font-bold text-accent mb-2">100%</div>
+            <p className="text-muted">Projetos em Produção</p>
           </div>
-          <div className="text-center p-6 bg-slate-800 rounded-xl border border-slate-700">
-            <div className="text-4xl font-bold text-cyan-400 mb-2">API</div>
-            <p className="text-slate-400">Integração Completa</p>
+          <div className="text-center p-6 card">
+            <div className="text-4xl font-bold text-accent mb-2">API</div>
+            <p className="text-muted">Integração Completa</p>
           </div>
         </div>
       </div>

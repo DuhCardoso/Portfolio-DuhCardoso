@@ -1,6 +1,6 @@
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
 
-export default function Hero() {
+const Hero = () => {
   return (
     <section
       id="home"
@@ -12,16 +12,18 @@ export default function Hero() {
       <div className="absolute bottom-20 left-20 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl z-0"></div>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
-        <div className="inline-block px-4 py-2 bg-slate-800 border border-slate-700 rounded-full mb-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 z-10">
+        {/* balloon */}
+        <div className="inline-block px-4 py-2 bg-slate-800 border border-slate-700 rounded-full mb-8 hover:scale-105 transition-transform duration-300 text-center">
           <span className="text-cyan-400 text-sm font-medium">
             👋 Bem-vindo ao meu portfólio
           </span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        {/* Hero Title */}
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 ">
           Full Stack
-          <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          <span className="block bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
             Developer
           </span>
         </h1>
@@ -63,10 +65,12 @@ export default function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="flex justify-center animate-bounce">
+        <a href="#about" className="flex justify-center animate-bounce">
           <ChevronDown className="text-cyan-400" size={32} />
-        </div>
+        </a>
       </div>
     </section>
   );
-}
+};
+
+export default Hero;

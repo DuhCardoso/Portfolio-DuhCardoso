@@ -1,15 +1,15 @@
-import Navigation from "./components/Navigation";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import TechStack from "./components/TechStack";
-import Certificates from "./components/Certificates";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Navigation from "./components/layout/Navigation";
+import Hero from "./components/pages/HeroSection/Hero";
+import About from "./components/pages/About";
+import Portfolio from "./components/pages/Portfolio";
+import TechStack from "./components/layout/TechStack";
+import Certificates from "./components/pages/Certificates";
+import Contact from "./components/pages/Contact";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
-    <div className="bg-slate-900 text-white">
+    <div className="bg-slate-900 text-white ">
       <header>
         <Navigation />
       </header>
