@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.linkCard {
+  @apply p-3 bg-slate-800 hover:bg-cyan-400 text-slate-300 hover:text-slate-900 rounded-lg transition-all duration-300 transform hover:scale-110;
+}
+
 /* ===== PALETA DE CORES DO DESIGN SYSTEM ===== */
 :root {
   /* Cores de Fundo */
