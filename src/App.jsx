@@ -7,9 +7,9 @@ import Certificates from "./components/pages/Certificates";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/layout/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="bg-slate-900 text-white ">
+    <div className="">
       <header>
         <Navigation />
       </header>
@@ -26,6 +26,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
