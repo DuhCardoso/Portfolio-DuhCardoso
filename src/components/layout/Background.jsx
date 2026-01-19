@@ -1,6 +1,6 @@
 const Background = () => {
   return (
-    <>
+    <div className="fixed inset-0 -z-10 pointer-events-none ">
       {/* Background gradient */}
       <div className="absolute inset-0  from-slate-900 via-slate-900 to-slate-800 z-0"></div>
       <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl z-0"></div>
@@ -16,7 +16,7 @@ const Background = () => {
         <div className="bg-teal-500 w-100 h-75 rounded-full absolute animate-movinBg -rotate-90"></div>
         <div className="bg-sky-500 w-102.5 h-77.5 rounded-full  absolute animate-movinBg -rotate-180"></div>
       </div>
-    </>
+    </div>
   );
 };
 
