@@ -28,6 +28,18 @@ body {
   @apply p-3 bg-slate-800 hover:bg-cyan-400 text-slate-300 hover:text-slate-900 rounded-lg transition-all duration-300 transform hover:scale-110;
 }
 
+.activeNav {
+  @apply lg:opacity-100
+                after:content-[''] after:bg-cyan-400  after:w-[105%] after:h-0.5
+                after:block after:-bottom-0.5 after:-left-0.5 after:relative;
+}
+.desableNav {
+  @apply after:transform after:duration-300
+                after:content-[''] after:bg-cyan-400  after:w-0 after:h-0.5
+                after:block after:-bottom-0.5 after:-left-0.5 
+                after:relative hover:after:w-[105%];
+}
+
 /* ===== PALETA DE CORES DO DESIGN SYSTEM ===== */
 :root {
   /* Cores de Fundo */
