@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <section
-      id="home"
+      id="Home"
       className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden"
     >
       {/* Content */}
