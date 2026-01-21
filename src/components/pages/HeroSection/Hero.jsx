@@ -43,14 +43,18 @@ const Hero = () => {
         <div className="flex gap-4 justify-center mb-12 flex-wrap">
           <PrimaryButton href="#portfolio" content="Ver Projetos" />
 
-          <SecundaryButton href="#contact" content="Download CV" />
+          <SecundaryButton
+            href="https://drive.google.com/file/d/1i18CQKx4YUyNz5snlmxLK33lpg195i1E/view?usp=drive_link"
+            _blank
+            content="Download CV"
+          />
         </div>
 
         {/* Social Links */}
         <SocialLinks />
 
         {/* Scroll indicator */}
-        <a href="#about" className="flex justify-center animate-bounce">
+        <a href="#About" className="flex justify-center animate-bounce">
           <ChevronDown className="text-cyan-400" size={32} />
         </a>
       </div>
