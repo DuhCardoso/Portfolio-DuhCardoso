@@ -3,7 +3,11 @@ import LinkCard from "./LinkCard";
 
 const SocialLinks = () => {
   return (
-    <ul className="flex gap-6 justify-center mb-16">
+    <ul
+      className="flex gap-6 justify-center mb-16"
+      data-aos="fade-up"
+      data-aos-delay="1500"
+    >
       <LinkCard
         content={<Github size={24} />}
         href="https://github.com/DuhCardoso"

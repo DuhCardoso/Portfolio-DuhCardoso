@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Sparkles } from "lucide-react";
 import SocialLinks from "../../layout/SocialLinks";
 import { Typewriter } from "react-simple-typewriter";
 import PrimaryButton from "../../layout/PrimaryButton";
@@ -20,14 +20,25 @@ const Hero = () => {
       {/* Content */}
       <div className="max-w-full mx-auto p-4 sm:p-6  lg:px-8 z-10">
         {/* balloon */}
-        <div className="inline-block px-4 py-2 bg-slate-800 border border-slate-700 rounded-full mb-8 hover:scale-105 transition-transform duration-300 text-center hover:shadow-lg hover:shadow-cyan-400/40">
-          <span className="text-cyan-400 text-sm font-medium">
-            👋 Bem-vindo ao meu portfólio
+        <div
+          className="inline-block mb-8 text-center "
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
+          <div className="absolute -inset-0.5 bg-linear-to-r from-cyan-800 to-cyan-700 rounded-full blur opacity-40 transition duration-1000 " />
+
+          <span className="text-cyan-400 text-sm font-medium justify-center flex items-center bg-slate-800 border border-slate-700 rounded-full px-4 py-2  ">
+            <Sparkles size={16} className="inline-block mr-2 " /> Bem-vindo ao
+            meu portfólio
           </span>
         </div>
 
         {/* Hero Title */}
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        <h1
+          className="text-4xl md:text-6xl font-bold mb-6"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           Full Stack
           <span className="block bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
             Developer
@@ -35,12 +46,20 @@ const Hero = () => {
         </h1>
 
         {/* Typewriter Effect */}
-        <span className="text-2xl opacity-80 font-semibold text-slate-300 mb-6 inline-block h-12">
+        <span
+          className="text-2xl opacity-80 font-semibold text-slate-300 mb-6 inline-block h-12"
+          data-aos="fade-up"
+          data-aos-delay="800"
+        >
           <Typewriter words={wordsList} loop cursor cursorColor="#00FFFF" />
         </span>
 
         {/* Call to Action Buttons */}
-        <div className="flex gap-4 justify-center mb-12 flex-wrap">
+        <div
+          className="flex gap-4 justify-center mb-12 flex-wrap"
+          data-aos="fade-up"
+          data-aos-delay="1400"
+        >
           <PrimaryButton href="#portfolio" content="Ver Projetos" />
 
           <SecundaryButton
@@ -54,7 +73,12 @@ const Hero = () => {
         <SocialLinks />
 
         {/* Scroll indicator */}
-        <a href="#About" className="flex justify-center animate-bounce">
+        <a
+          href="#About"
+          className="flex justify-center animate-bounce"
+          data-aos="fade-up"
+          data-aos-delay="1400"
+        >
           <ChevronDown className="text-cyan-400" size={32} />
         </a>
       </div>
