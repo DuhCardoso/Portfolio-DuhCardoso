@@ -1,8 +1,9 @@
-import { ChevronDown, Sparkles } from "lucide-react";
+import { Balloon, ChevronDown, Sparkles } from "lucide-react";
 import SocialLinks from "../../layout/SocialLinks";
 import { Typewriter } from "react-simple-typewriter";
 import PrimaryButton from "../../layout/PrimaryButton";
 import SecundaryButton from "../../layout/SecundaryButton";
+import BalloonDev from "../../layout/BalloonDev";
 
 const Hero = () => {
   const wordsList = [
@@ -47,18 +48,29 @@ const Hero = () => {
 
         {/* Typewriter Effect */}
         <span
-          className="text-2xl opacity-80 font-semibold text-slate-300 mb-6 inline-block h-12"
+          className="text-2xl opacity-80 font-semibold text-slate-300 sm:mb-2 inline-block h-12"
           data-aos="fade-up"
           data-aos-delay="800"
         >
           <Typewriter words={wordsList} loop cursor cursorColor="#00FFFF" />
         </span>
 
+        {/* Balloons Frameworks*/}
+        <div
+          className="flex flex-wrap gap-1 mb-6"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
+          <BalloonDev tech="React" />
+          <BalloonDev tech="Node.js" />
+          <BalloonDev tech="Tailwind CSS" />
+        </div>
+
         {/* Call to Action Buttons */}
         <div
           className="flex gap-4 justify-center mb-12 flex-wrap"
           data-aos="fade-up"
-          data-aos-delay="1400"
+          data-aos-delay="1200"
         >
           <PrimaryButton href="#portfolio" content="Ver Projetos" />
 

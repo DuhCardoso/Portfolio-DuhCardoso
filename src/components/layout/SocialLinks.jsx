@@ -6,7 +6,7 @@ const SocialLinks = () => {
     <ul
       className="flex gap-6 justify-center mb-16"
       data-aos="fade-up"
-      data-aos-delay="1500"
+      data-aos-delay="1400"
     >
       <LinkCard
         content={<Github size={24} />}
