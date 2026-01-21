@@ -26,7 +26,7 @@ const About = () => {
           {/* Right - Description */}
           <div>
             <p
-              className="text-lg text-slate-300 mb-6 leading-relaxed opacity-90"
+              className="text-lg text-slate-300 mb-6 mt-8 leading-relaxed opacity-90"
               data-aos="fade-left"
               data-aos-duration="800"
             >
