@@ -40,6 +40,10 @@ body {
                 after:relative hover:after:w-[105%];
 }
 
+.underlineTitle {
+  @apply w-16 h-1 bg-linear-to-r from-cyan-400 to-blue-500 mx-auto;
+}
+
 /* ===== PALETA DE CORES DO DESIGN SYSTEM ===== */
 :root {
   /* Cores de Fundo */
@@ -48,7 +52,7 @@ body {
   --bg-tertiary: #334155; /* slate-700 */
 
   /* Cores de Texto */
-  --text-primary: #f1f5f9; /* white/slate-100 */
+  --text-primary: #f1f5f9; /* slate-100 */
   --text-secondary: #cbd5e1; /* slate-300 */
   --text-tertiary: #94a3b8; /* slate-400 */
 
