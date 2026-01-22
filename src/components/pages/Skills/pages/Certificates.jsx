@@ -26,17 +26,8 @@ export default function Certificates() {
   ];
 
   return (
-    <section className="py-20 bg-slate-800">
+    <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Certificações</h2>
-          <p className="text-slate-400 text-lg">
-            Cursos e certificações que demonstram meu conhecimento
-          </p>
-          <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-4"></div>
-        </div>
-
         {/* Certificates Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {certificates.map((cert) => (
@@ -88,6 +79,6 @@ export default function Certificates() {
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 }
