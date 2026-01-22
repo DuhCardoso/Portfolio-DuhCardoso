@@ -9,6 +9,7 @@ import ButtonSetPage from "./component/ButtonSetPage";
 const SkillsSection = () => {
   const [pageState, setPageState] = useState("portfolio");
 
+  //   Switch of components with useState
   const renderPage = () => {
     switch (pageState) {
       case "portfolio":
