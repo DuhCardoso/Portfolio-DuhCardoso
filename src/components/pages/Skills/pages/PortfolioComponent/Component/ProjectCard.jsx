@@ -1,12 +1,35 @@
 import { ExternalLink, Github } from "lucide-react";
+import { useEffect, useState } from "react";
+
 import PrimaryButton from "../../../../../layout/PrimaryButton";
 import SecundaryButton from "../../../../../layout/SecundaryButton";
 
 const ProjectCard = ({ projectData }) => {
+  const [direction, setDirection] = useState("");
+
+  const fateById = () => {
+    if ([1, 4, 7, 10].includes(projectData.id)) {
+      setDirection("-right");
+    } else if ([2, 5, 8, 11].includes(projectData.id)) {
+      setDirection("");
+    } else if ([3, 6, 9, 12].includes(projectData.id)) {
+      setDirection("-left");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("load", fateById());
+    return () => {
+      window.removeEventListener("load", fateById());
+    };
+  });
+
   return (
     <div
       key={projectData.id}
       className="flex flex-col justify-between bg-slate-900 rounded-xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-400/20"
+      data-aos={`fade-up${direction}`}
+      data-aos-duration="1000"
     >
       {/* Project Image */}
       <div className="relative p-5 z-10 ">
