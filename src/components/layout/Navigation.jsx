@@ -5,10 +5,10 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { id: 1, name: "Home", href: "#Home" },
-    { id: 2, name: "Sobre", href: "#About" },
-    { id: 3, name: "Portfólio", href: "#Portfolio" },
-    { id: 4, name: "Contato", href: "#Contact" },
+    { id: 1, name: "Home", href: "Home" },
+    { id: 2, name: "Sobre", href: "About" },
+    { id: 3, name: "Portfólio", href: "Portfolio" },
+    { id: 4, name: "Contato", href: "Contact" },
   ];
 
   return (
@@ -32,8 +32,8 @@ export default function Navigation() {
           {navItems.map((item) => (
             <li key={item.id}>
               <a
-                id={`nav${item.name}`}
-                href={item.href}
+                id={`nav${item.href}`}
+                href={`#${item.href}`}
                 className="text-slate-300 hover:text-cyan-400 transition-colors duration-300 text-sm font-medium desableNav activeNav"
               >
                 {item.name}

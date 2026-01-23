@@ -1,7 +1,6 @@
 window.addEventListener("scroll", onScrollFunctions);
 
 function activateNavItens(section) {
-  console.log(section);
   const targetLine = window.scrollY + window.innerHeight / 2;
   //o calculo feito nela é a soma da altura do scroll + a altura da Viwerport, esse valor dividido pela meta (/2), cria uma linha imaginaria no centro da viwerport
 
@@ -41,6 +40,6 @@ export default function onScrollFunctions() {
     activateNavItens(document.getElementById("Home"));
     activateNavItens(document.getElementById("About"));
     activateNavItens(document.getElementById("Portfolio"));
-    activateNavItens(document.getElementById("Contact"));
+    // activateNavItens(document.getElementById("Contact"));
   }
 }
