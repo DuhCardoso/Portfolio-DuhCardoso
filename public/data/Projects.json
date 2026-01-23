@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Secret Word",
-    "description": "Plataforma de streaming de vídeos. Interface intuitiva para descobrir e assistir seu conteúdo favorito.",
+    "description": "Jogo desenvolvido com base em um array de palavras, permitindo ao usuário inserir letras em um formulário para acertar as palavras sorteadas durante a partida.",
     "tech": ["React", "Node", "JSON", "CSS3"],
     "image": "/SecretWord.png",
     "liveUrl": "https://secret-word-mocha.vercel.app/",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "RocketCoffee",
-    "description": "Plataforma completa de e-commerce com carrinho, pagamentos e painel administrativo.",
+    "description": "Menu virtual desenvolvido para uma cafeteria, permitindo a visualização dos produtos de forma prática e organizada.",
     "tech": ["HTML5", "CSS3"],
     "image": "/RocketCoffee.png",
     "liveUrl": "https://rocket-coffee-beige.vercel.app/",
