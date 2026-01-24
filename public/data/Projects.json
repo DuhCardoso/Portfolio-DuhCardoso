@@ -4,7 +4,7 @@
     "title": "SaaS Pro",
     "description": "Landing page front-end criada para uma plataforma SaaS, projetada para apresentar o produto de forma objetiva, responsiva e com foco na experiência do usuário.",
     "tech": ["React", "Tailwind CSS", "Node"],
-    "image": "/SaasPro.png",
+    "image": "/images/SaasPro.png",
     "liveUrl": "https://saas-pro-product.vercel.app/",
     "githubUrl": "https://github.com/DuhCardoso"
   },
@@ -13,7 +13,7 @@
     "title": "Lista De Chamada",
     "description": "Aplicação front-end que recebe um nome do usuário, registra o horário do envio e cria dinamicamente componentes na tela, organizando as informações em uma lista.",
     "tech": ["React", "Node", "CSS3"],
-    "image": "/ListaDeChamda.png",
+    "image": "/images/ListaDeChamda.png",
     "liveUrl": "https://lista-de-chamada-eight.vercel.app/",
     "githubUrl": "https://github.com/DuhCardoso"
   },
@@ -22,7 +22,7 @@
     "title": "Secret Word",
     "description": "Jogo desenvolvido com base em um array de palavras, permitindo ao usuário inserir letras em um formulário para acertar as palavras sorteadas durante a partida.",
     "tech": ["React", "Node", "JSON", "CSS3"],
-    "image": "/SecretWord.png",
+    "image": "/images/SecretWord.png",
     "liveUrl": "https://secret-word-mocha.vercel.app/",
     "githubUrl": "https://github.com/DuhCardoso"
   },
@@ -31,7 +31,7 @@
     "title": "RocketCoffee",
     "description": "Menu virtual desenvolvido para uma cafeteria, permitindo a visualização dos produtos de forma prática e organizada.",
     "tech": ["HTML5", "CSS3"],
-    "image": "/RocketCoffee.png",
+    "image": "/images/RocketCoffee.png",
     "liveUrl": "https://rocket-coffee-beige.vercel.app/",
     "githubUrl": "https://github.com/DuhCardoso/RocketCoffee"
   },
@@ -40,7 +40,7 @@
     "title": "Leitor De Destino",
     "description": "Projeto interativo onde o usuário faz uma pergunta e recebe uma resposta aleatória, selecionada de um array de frases e renderizada dinamicamente na tela utilizando manipulação do DOM.",
     "tech": ["HTML5", "CSS3", "JavaScript"],
-    "image": "/LeitorDeDestino.png",
+    "image": "/images/LeitorDeDestino.png",
     "liveUrl": "https://leitor-de-destino.vercel.app/",
     "githubUrl": "https://github.com/DuhCardoso"
   },
@@ -49,7 +49,7 @@
     "title": "RocketPay",
     "description": "Rocketpay é um componente interativo que simula o preenchimento de um cartão de crédito, com aplicação de máscaras nos inputs e atualização dinâmica dos elementos HTML por meio da manipulação do DOM.",
     "tech": ["HTML5", "CSS3", "Node"],
-    "image": "/RocketPay.png",
+    "image": "/images/RocketPay.png",
     "liveUrl": "https://rocketpay-nine.vercel.app/",
     "githubUrl": "https://github.com/DuhCardoso"
   }
