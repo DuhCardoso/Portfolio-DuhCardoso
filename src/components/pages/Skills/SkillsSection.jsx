@@ -2,7 +2,7 @@ import { Code, Zap, BookOpen } from "lucide-react";
 import { useState } from "react";
 
 import Portfolio from "./pages/PortfolioComponent/Portfolio";
-import Certificates from "./pages/Certificates";
+import Certificates from "./pages/CertificatesComponent/Certificates";
 import TechStack from "./pages/TechStake";
 import ButtonSetPage from "./component/ButtonSetPage";
 
@@ -14,10 +14,10 @@ const SkillsSection = () => {
     switch (pageState) {
       case "portfolio":
         return <Portfolio />;
-      case "techStack":
-        return <TechStack />;
       case "certificates":
         return <Certificates />;
+      case "techStack":
+        return <TechStack />;
       default:
         return <Portfolio />;
     }
