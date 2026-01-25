@@ -15,8 +15,13 @@ const CertificatesCard = ({ certData }) => {
   }, [open]);
 
   return (
-    <div data-aos={`fade-up`} data-aos-duration={durationFate}>
-      <a className="cursor-pointer" onClick={() => setOpen(true)}>
+    <>
+      <a
+        className="cursor-pointer"
+        onClick={() => setOpen(true)}
+        data-aos={`fade-up`}
+        data-aos-duration={durationFate}
+      >
         <div
           key={certData.id}
           className="relative p-6 bg-linear-to-br from-slate-900 to-slate-800 rounded-xl border border-slate-700 hover:border-cyan-400 transition-all duration-300 transform hover:scale-105 group"
@@ -27,7 +32,7 @@ const CertificatesCard = ({ certData }) => {
       {open && (
         <ImagePreview image={certData.image} onClose={() => setOpen(false)} />
       )}
-    </div>
+    </>
   );
 };
 
