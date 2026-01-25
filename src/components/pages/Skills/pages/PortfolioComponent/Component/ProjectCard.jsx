@@ -41,16 +41,16 @@ const ProjectCard = ({ projectData }) => {
       </div>
 
       {/* Content */}
-      <div className="p-6">
-        <h3 className="text-2xl font-bold mb-3 text-cyan-400">
+      <div>
+        <h3 className="pl-6 pt-6 text-2xl font-bold mb-3 text-cyan-400">
           {projectData.title}
         </h3>
-        <p className="text-slate-300 mb-4 leading-relaxed">
+        <p className="px-6 text-slate-300 mb-4 leading-relaxed">
           {projectData.description}
         </p>
 
         {/* Tech Stack */}
-        <div className="flex flex-wrap gap-2 mb-6">
+        <div className=" pl-6 flex flex-wrap gap-2 mb-6">
           {projectData.tech.map((tech) => (
             <span
               key={tech}
@@ -62,7 +62,7 @@ const ProjectCard = ({ projectData }) => {
         </div>
 
         {/* Links */}
-        <div className="flex">
+        <div className="flex px-3 pb-3 xl:px-6 lg:pb-6">
           <PrimaryButton
             href={projectData.liveUrl}
             _blank
