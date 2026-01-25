@@ -6,6 +6,7 @@ import SecundaryButton from "../../../../../layout/SecundaryButton";
 
 const ProjectCard = ({ projectData }) => {
   const [direction, setDirection] = useState("");
+  const durationFate = 1000 + projectData.id * 100;
 
   const fateById = () => {
     if ([1, 4, 7, 10].includes(projectData.id)) {
@@ -29,7 +30,7 @@ const ProjectCard = ({ projectData }) => {
       key={projectData.id}
       className="flex flex-col justify-between bg-slate-900 rounded-xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-400/20"
       data-aos={`fade-up${direction}`}
-      data-aos-duration="1000"
+      data-aos-duration={durationFate}
     >
       {/* Project Image */}
       <div className="relative p-5 z-10 ">

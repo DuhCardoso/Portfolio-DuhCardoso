@@ -3,6 +3,7 @@ import ImagePreview from "./ImagePreview";
 
 const CertificatesCard = ({ certData }) => {
   const [open, setOpen] = useState(false);
+  const durationFate = 1000 + certData.id * 100;
 
   useEffect(() => {
     if (!open) return;
@@ -14,7 +15,7 @@ const CertificatesCard = ({ certData }) => {
   }, [open]);
 
   return (
-    <>
+    <div data-aos={`fade-up`} data-aos-duration={durationFate}>
       <a className="cursor-pointer" onClick={() => setOpen(true)}>
         <div
           key={certData.id}
@@ -26,7 +27,7 @@ const CertificatesCard = ({ certData }) => {
       {open && (
         <ImagePreview image={certData.image} onClose={() => setOpen(false)} />
       )}
-    </>
+    </div>
   );
 };
 
