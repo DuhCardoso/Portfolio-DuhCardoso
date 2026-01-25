@@ -29,7 +29,7 @@ body {
 }
 
 .activeNav {
-  @apply lg:opacity-100
+  @apply lg:opacity-100 lg:text-cyan-400
                 after:content-[''] after:bg-cyan-400  after:w-[105%] after:h-0.5
                 after:block after:-bottom-0.5 after:-left-0.5 after:relative;
 }
