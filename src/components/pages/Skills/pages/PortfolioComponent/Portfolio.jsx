@@ -6,6 +6,7 @@ import ProjectCard from "./Component/ProjectCard";
 const Portfolio = () => {
   const [seeMore, setSeeMore] = useState(false);
   const [projectsData, setProjectsData] = useState([]);
+  const [viewTablet, setViewTablet] = useState(3);
 
   useEffect(() => {
     fetch("/data/Projects.json")
@@ -16,14 +17,19 @@ const Portfolio = () => {
   return (
     <>
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-5">
         {seeMore
           ? projectsData.map((project) => {
               return <ProjectCard projectData={project} />;
             })
-          : projectsData.slice(0, 3).map((project) => {
-              return <ProjectCard projectData={project} />;
-            })}
+          : projectsData
+              .slice(
+                0,
+                window.innerWidth < 769 && window.innerWidth > 640 ? 2 : 3,
+              )
+              .map((project) => {
+                return <ProjectCard projectData={project} />;
+              })}
       </div>
 
       {/* View More */}

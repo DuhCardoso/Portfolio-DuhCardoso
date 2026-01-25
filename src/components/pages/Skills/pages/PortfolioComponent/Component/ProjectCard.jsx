@@ -62,11 +62,11 @@ const ProjectCard = ({ projectData }) => {
         </div>
 
         {/* Links */}
-        <div className="flex gap-4">
+        <div className="flex">
           <PrimaryButton
             href={projectData.liveUrl}
             _blank
-            content="Live Demo"
+            content="Demo"
             icon={<ExternalLink size={18} />}
             classNameButton=" flex items-center justify-center gap-2"
             classNameLink="flex-1"
