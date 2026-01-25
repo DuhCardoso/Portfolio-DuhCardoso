@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import Portfolio from "./pages/PortfolioComponent/Portfolio";
 import Certificates from "./pages/CertificatesComponent/Certificates";
-import TechStack from "./pages/TechStake";
+import TechStack from "./pages/TechStake/TechStake";
 import ButtonSetPage from "./component/ButtonSetPage";
 
 const SkillsSection = () => {
