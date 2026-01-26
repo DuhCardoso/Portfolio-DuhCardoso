@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Navigation from "./components/layout/Navigation";
 import Hero from "./components/pages/HeroSection/Hero";
 import About from "./components/pages/About/About";
-import Contact from "./components/pages/Contact";
+import Contact from "./components/pages/Contact/Contact";
 import Footer from "./components/layout/Footer";
 import SkillsSection from "./components/pages/Skills/SkillsSection";
 

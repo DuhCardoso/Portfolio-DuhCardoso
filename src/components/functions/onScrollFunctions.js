@@ -40,6 +40,6 @@ export default function onScrollFunctions() {
     activateNavItens(document.getElementById("Home"));
     activateNavItens(document.getElementById("About"));
     activateNavItens(document.getElementById("Portfolio"));
-    // activateNavItens(document.getElementById("Contact"));
+    activateNavItens(document.getElementById("Contact"));
   }
 }

@@ -44,6 +44,23 @@ body {
   @apply w-16 h-1 bg-linear-to-r from-cyan-400 to-blue-500 mx-auto;
 }
 
+/* Contact Form */
+.iconForm {
+  @apply absolute left-4 top-4 w-5 h-5 text-slate-500 group-focus-within:text-cyan-400 transition-colors;
+}
+
+.imputForm {
+  @apply w-full p-4 pl-12 bg-slate-800 rounded-lg border border-slate-700 placeholder-slate-500 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400  transition-all duration-300 hover:border-cyan-400 disabled:opacity-50;
+}
+
+.textareaForm {
+  @apply w-full p-4 pl-12 bg-slate-800 rounded-lg border border-slate-700 placeholder-slate-500 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400  transition-all duration-300 hover:border-cyan-400 disabled:opacity-50 resize-none;
+}
+
+.buttonForm {
+  @apply w-full px-6 py-3 bg-linear-to-r from-cyan-400 to-blue-500 text-slate-900 font-bold rounded-lg hover:shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer;
+}
+
 /* ===== PALETA DE CORES DO DESIGN SYSTEM ===== */
 :root {
   /* Cores de Fundo */
