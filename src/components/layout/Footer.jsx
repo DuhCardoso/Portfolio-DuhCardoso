@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex-1 hidden lg:block">
             <a
-              href="#home"
+              href="#Home"
               className="text-2xl font-bold bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
             >
               DuhCardoso
