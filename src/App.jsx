@@ -1,5 +1,5 @@
 import onScrollFunctions from "./components/functions/onScrollFunctions";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // Components
 import Navigation from "./components/layout/Navigation";
@@ -10,21 +10,25 @@ import Footer from "./components/layout/Footer";
 import SkillsSection from "./components/pages/Skills/SkillsSection";
 
 const App = () => {
-  useEffect(() => {
-    function watchScroll() {
-      window.addEventListener("scroll", onScrollFunctions);
-    }
+  const [isOpen, setIsOpen] = useState(false);
 
-    watchScroll();
-    return () => {
-      window.removeEventListener("scroll", onScrollFunctions);
-    };
+  useEffect(() => {
+    if (window.innerWidth > 640 || isOpen == true) {
+      function watchScroll() {
+        window.addEventListener("scroll", onScrollFunctions);
+      }
+
+      watchScroll();
+      return () => {
+        window.removeEventListener("scroll", onScrollFunctions);
+      };
+    }
   });
 
   return (
     <div className="max-w-full overflow-x-hidden">
       <header>
-        <Navigation />
+        <Navigation mobileMode={isOpen} setMobileMode={setIsOpen} />
       </header>
 
       <main>

@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
-
+const Navigation = ({ mobileMode, setMobileMode }) => {
   const navItems = [
     { id: 1, name: "Home", href: "Home" },
     { id: 2, name: "Sobre", href: "About" },
@@ -14,16 +12,16 @@ export default function Navigation() {
   return (
     <nav
       id="Navbar"
-      className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 z-50"
+      className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b-2 border-slate-700 z-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         {/* Logo */}
         <div className="shrink-0">
           <a
-            href="#home"
+            href="#Home"
             className="text-2xl font-bold bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
           >
-            &lt;Dev /&gt;
+            DuhCardoso
           </a>
         </div>
 
@@ -45,22 +43,23 @@ export default function Navigation() {
         {/* Mobile menu button */}
         <div className="md:hidden">
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => setMobileMode(!mobileMode)}
             className="text-slate-300 hover:text-cyan-400"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {mobileMode ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile menu */}
-        {isOpen && (
-          <div className="md:hidden pb-4 border-t border-slate-700">
+        {mobileMode && (
+          <div className="fixed right-0 top-16 md:hidden px-6 py-4 border-l-2  border-b-2 border-r-2 rounded-b-xl bg-slate-900/95 border-slate-700">
             {navItems.map((item) => (
               <a
+                id={`mobileNav${item.href}`}
                 key={item.name}
-                href={item.href}
-                className="block py-2 text-slate-300 hover:text-cyan-400 transition-colors"
-                onClick={() => setIsOpen(false)}
+                href={`#${item.href}`}
+                className="block py-2 hover:text-cyan-400 transition-colors desableNav activeNav"
+                onClick={() => setMobileMode(false)}
               >
                 {item.name}
               </a>
@@ -70,4 +69,6 @@ export default function Navigation() {
       </div>
     </nav>
   );
-}
+};
+
+export default Navigation;

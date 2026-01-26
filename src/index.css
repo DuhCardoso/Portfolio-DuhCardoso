@@ -29,12 +29,12 @@ body {
 }
 
 .activeNav {
-  @apply lg:opacity-100 lg:text-cyan-400
+  @apply opacity-100 text-cyan-400
                 after:content-[''] after:bg-cyan-400  after:w-[105%] after:h-0.5
                 after:block after:-bottom-0.5 after:-left-0.5 after:relative;
 }
 .desableNav {
-  @apply after:transform after:duration-300
+  @apply after:transform after:duration-300 text-slate-300  
                 after:content-[''] after:bg-cyan-400  after:w-0 after:h-0.5
                 after:block after:-bottom-0.5 after:-left-0.5 
                 after:relative hover:after:w-[105%];

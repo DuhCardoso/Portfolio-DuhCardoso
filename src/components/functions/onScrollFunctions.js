@@ -16,9 +16,13 @@ function activateNavItens(section) {
   const sectionEndPassedTargetLine = targetLine >= sectionEnd;
   // Fica analisando enquanto a targetline for menor ou igual ao final da section
 
-  const navElement = document.querySelector(
-    `#nav${section.getAttribute("id")}`,
-  );
+  const typeWidthView =
+    window.innerWidth > 640
+      ? `#nav${section.getAttribute("id")}`
+      : `#mobileNav${section.getAttribute("id")}`;
+  // Ira diferenciar qual id que deve ser buscado dependendo do tamanho da tela
+
+  const navElement = document.querySelector(typeWidthView);
   // Busca o id do elemente da nav que contem o destino para adicionar e retirar as classes
 
   const sectionBoundaries =
@@ -36,10 +40,8 @@ function activateNavItens(section) {
 
 export default function onScrollFunctions() {
   // Sera passado para um useEffet no component "App.jsx"
-  if (window.innerWidth >= 1024) {
-    activateNavItens(document.getElementById("Home"));
-    activateNavItens(document.getElementById("About"));
-    activateNavItens(document.getElementById("Portfolio"));
-    activateNavItens(document.getElementById("Contact"));
-  }
+  activateNavItens(document.getElementById("Home"));
+  activateNavItens(document.getElementById("About"));
+  activateNavItens(document.getElementById("Portfolio"));
+  activateNavItens(document.getElementById("Contact"));
 }
