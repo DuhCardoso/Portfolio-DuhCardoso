@@ -36,7 +36,7 @@ const Contact = () => {
               Conecte-se comigo por outros meios!
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
-              <SocialLinks />
+              <SocialLinks size={40} />
             </div>
           </div>
         </div>

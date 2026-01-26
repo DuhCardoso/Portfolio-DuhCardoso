@@ -1,7 +1,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import LinkCard from "./LinkCard";
 
-const SocialLinks = ({ fate }) => {
+const SocialLinks = ({ fate, size }) => {
   return (
     <ul
       className="flex gap-6 justify-center mb-16"
@@ -9,16 +9,16 @@ const SocialLinks = ({ fate }) => {
       data-aos-delay={fate ? "1400" : ""}
     >
       <LinkCard
-        content={<Github size={24} />}
+        content={<Github size={size ? size : 24} />}
         href="https://github.com/DuhCardoso"
         _blank={true}
       />
       <LinkCard
-        content={<Linkedin size={24} />}
+        content={<Linkedin size={size ? size : 24} />}
         href="https://www.linkedin.com/in/duhcardoso/"
         _blank={true}
       />
-      <LinkCard content={<Mail size={24} />} href="#Contact" />
+      <LinkCard content={<Mail size={size ? size : 24} />} href="#Contact" />
     </ul>
   );
 };
