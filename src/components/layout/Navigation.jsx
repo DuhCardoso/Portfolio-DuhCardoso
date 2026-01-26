@@ -52,7 +52,7 @@ const Navigation = ({ mobileMode, setMobileMode }) => {
 
         {/* Mobile menu */}
         {mobileMode && (
-          <div className="fixed right-0 top-16 md:hidden px-6 py-4 border-l-2  border-b-2 border-r-2 rounded-b-xl bg-slate-900/95 border-slate-700">
+          <div className="absolute right-0 top-16 md:hidden px-6 py-4 border-l-2  border-b-2 border-r-2 rounded-b-xl bg-slate-900/95 border-slate-700">
             {navItems.map((item) => (
               <a
                 id={`mobileNav${item.href}`}
