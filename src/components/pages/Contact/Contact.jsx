@@ -1,7 +1,7 @@
 import SocialLinks from "../../layout/SocialLinks";
 import ContactFrom from "./components/ContactFrom";
 
-export default function Contact() {
+const Contact = () => {
   return (
     <section id="Contact" className="py-20">
       <div className="max-w-7xl w-[90%] lg:w-[75%] mx-auto px-4 sm:px-6 lg:px-8 bg-slate-800/30 rounded-2xl">
@@ -29,4 +29,6 @@ export default function Contact() {
       </div>
     </section>
   );
-}
+};
+
+export default Contact;
