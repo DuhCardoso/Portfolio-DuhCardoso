@@ -6,7 +6,6 @@ import ProjectCard from "./Component/ProjectCard";
 const Portfolio = () => {
   const [seeMore, setSeeMore] = useState(false);
   const [projectsData, setProjectsData] = useState([]);
-  const [viewTablet, setViewTablet] = useState(3);
 
   useEffect(() => {
     fetch("/data/Projects.json")
@@ -28,7 +27,7 @@ const Portfolio = () => {
                 window.innerWidth < 769 && window.innerWidth > 640 ? 2 : 3,
               )
               .map((project) => {
-                return <ProjectCard projectData={project} />;
+                return <ProjectCard key={project.id} projectData={project} />;
               })}
       </div>
 
