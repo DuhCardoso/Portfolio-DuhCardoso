@@ -82,7 +82,7 @@ const Hero = () => {
         </div>
 
         {/* Social Links */}
-        <SocialLinks />
+        <SocialLinks fate="true" />
 
         {/* Scroll indicator */}
         <a
