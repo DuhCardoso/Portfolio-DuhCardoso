@@ -3,7 +3,7 @@ import ContactFrom from "./components/ContactFrom";
 
 const Contact = () => {
   return (
-    <section id="Contact" className="py-20">
+    <section id="Contact" className="py-20 min-h-screen">
       <div
         className="max-w-7xl w-[90%] lg:w-[75%] mx-auto px-4 sm:px-6 lg:px-8 bg-slate-800/30 rounded-2xl"
         data-aos="fade-right"
