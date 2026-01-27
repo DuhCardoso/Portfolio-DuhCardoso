@@ -12,14 +12,14 @@ body {
   box-sizing: border-box;
 }
 @theme {
-  --animate-movinBg: go-back 0.8s infinite alternate;
+  --animate-movinBg: go-back 2.5s infinite alternate;
 
   @keyframes go-back {
     0% {
       transform: translatex(0px);
     }
     100% {
-      transform: translatex(10rem);
+      transform: translatex(12rem);
     }
   }
 }
