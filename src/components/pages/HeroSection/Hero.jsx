@@ -75,7 +75,7 @@ const Hero = () => {
           <PrimaryButton href="#portfolio" content="Ver Projetos" />
 
           <SecundaryButton
-            href="https://drive.google.com/file/d/1i18CQKx4YUyNz5snlmxLK33lpg195i1E/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1Bybz5h4px9FRD9e8Ii9lm-yv7Sm3DPNW/view?usp=drive_link"
             _blank
             content="Download CV"
           />
