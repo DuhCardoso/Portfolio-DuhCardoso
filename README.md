@@ -28,4 +28,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - ⚛️ React;
 - ⚡ Vite;
 - 🧹 Tailwind;
+- 📄 DOM;
 - 🎉 AOS;
