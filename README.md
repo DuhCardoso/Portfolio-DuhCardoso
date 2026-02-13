@@ -7,7 +7,7 @@ Uma rápida introdução do meu portfólio individual, no qual revelo meus traba
 Este repositório abriga o código original do meu portfólio desenvolvido com React e Vite.  
 Seu propósito é exibir meus trabalhos, minhas competências e um pouco do meu modo de programar.
 
-👉 Projeto online: https://portfolio-duh-cardoso.vercel.app/ :contentReference[oaicite:2]{index=2}
+👉 Projeto online: https://portfolio-duh-cardoso.vercel.app/
 
 ---
 
