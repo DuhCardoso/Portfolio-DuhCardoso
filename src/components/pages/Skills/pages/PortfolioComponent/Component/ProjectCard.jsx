@@ -12,9 +12,9 @@ const ProjectCard = ({ projectData }) => {
     if ([1, 4, 7, 10].includes(projectData.id)) {
       setDirection("-right");
     } else if ([2, 5, 8, 11].includes(projectData.id)) {
-      setDirection("");
-    } else if ([3, 6, 9, 12].includes(projectData.id)) {
       setDirection("-left");
+    } else if ([3, 6, 9, 12].includes(projectData.id)) {
+      setDirection("");
     }
   };
 
